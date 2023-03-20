@@ -46,7 +46,7 @@ async function createTable() {
     var events = []
     try {
         getDocs(q).then(function (querySnapshot) {
-            $("#table-1").DataTable().destroy()
+            $("#table-1").DataTable().destroy();
             $("#dataTable").html('')
             if (querySnapshot.size > 0) {
                 var count = 0
