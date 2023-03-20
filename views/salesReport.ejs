@@ -1,0 +1,513 @@
+<div class="contents">
+
+    <div class="crm mb-25">
+       <div class="container-fluid">
+          <div class="row ">
+             <div class="col-lg-12">
+
+                <div class="breadcrumb-main">
+                   <h4 class="text-capitalize breadcrumb-title">Sales Report</h4>
+                   <div class="breadcrumb-action justify-content-center flex-wrap">
+                      <nav aria-label="breadcrumb">
+                         <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#"><i class="uil uil-airplay"></i>Sales Report</a></li>
+                         </ol>
+                      </nav>
+                   </div>
+                </div>
+
+             </div>
+             <div class="col-12 mb-30">
+
+                <div class="card-body">
+                    <a href="" class="menu-mob-trigger d-lg-none">
+                       <span></span>
+                       <span></span>
+                       <span></span>
+                    </a>
+                    <div class="menu-wrapper">
+
+                       <ul class="dm-menu menu-top menu-horizontal ">
+                        <li class="dm-menu__item">
+                            <a class="dm-menu__link" href="#">
+                               <span class="dm-menu__text">Today</span>
+                            </a>
+                         </li>
+                         <li class="dm-menu__item">
+                            <a class="dm-menu__link" href="#">
+                               <span class="dm-menu__icon">|</span>
+                               <span class="dm-menu__text">Yesterday</span>
+                            </a>
+                         </li>
+                         <li class="dm-menu__item">
+                            <a class="dm-menu__link" href="#">
+                               <span class="dm-menu__icon">|</span>
+                               <span class="dm-menu__text">Current Week</span>
+                            </a>
+                         </li>
+                         <li class="dm-menu__item">
+                            <a class="dm-menu__link" href="#">
+                               <span class="dm-menu__icon">|</span>
+                               <span class="dm-menu__text">Previous Week</span>
+                            </a>
+                         </li>
+                          <li class="dm-menu__item">
+                             <a class="dm-menu__link" href="#">
+                                <span class="dm-menu__icon">|</span>
+                                <span class="dm-menu__text">Current Month</span>
+                             </a>
+                          </li>
+                       </ul>
+
+                    </div>
+                 </div>
+                 <div class="card card-horizontal card-default card-md mb-4">
+                    <div class="card-header d-block">
+                        <div class="row w-100 mb-10">
+                            <div class="col-sm-4">
+                                <div class="dm-date-picker">
+                                    <div class="form-group mb-0 form-group-calender">
+                                        <div class="position-relative">
+                                        <input type="text" class="form-control w-100 form-control-lg hasDatepicker" id="datepicker1" placeholder="From Date">
+                                        <a href="#"><img class="svg" src="img/svg/calendar.svg" alt="calendar"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="dm-date-picker">
+                                    <div class="form-group mb-0 form-group-calender">
+                                       <div class="position-relative">
+                                          <input type="text" class="form-control w-100 form-control-lg hasDatepicker" id="datepicker2" placeholder="To Date">
+                                          <a href="#"><img class="svg" src="img/svg/calendar.svg" alt="calendar"></a>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <select class="form-control ih-medium ip-light radius-xs b-light px-15 select2" id="exampleFormControlSelect1">
+                                    <option>Select Car Washer</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                 </select> 
+                            </div>
+                        </div>
+                        <div class="row w-100">
+                            <div class="col-sm-4">
+                                <select class="form-control ih-medium ip-light radius-xs b-light px-15 select2" id="exampleFormControlSelect2">
+                                    <option>Select User</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                 </select> 
+                            </div>
+                            <div class="col-sm-4">
+                                <select class="form-control ih-medium ip-light radius-xs b-light px-15 select2" id="exampleFormControlSelect3">
+                                    <option>Select Payment Types</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                 </select> 
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" class="form-control ih-medium ip-light radius-xs b-light px-15" id="bokingno" placeholder="Booking No">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 mb-30">
+                    <div class="support-ticket-system support-ticket-system--search">
+                       <div class="userDatatable userDatatable--ticket userDatatable--ticket--2 mt-1">
+                          <div class="table-responsive">
+                             <table class="table mb-0 table-borderless" id="DataTable">
+                                <thead>
+                                   <tr class="userDatatable-header">
+                                      <th>
+                                         <span class="userDatatable-title">Booking No</span>
+                                      </th>
+                                      <th>
+                                         <span class="userDatatable-title">Car Washer/User</span>
+                                      </th>
+                                      <th>
+                                         <span class="userDatatable-title">Job Date</span>
+                                      </th>
+                                      <th>
+                                         <span class="userDatatable-title">Total Fare</span>
+                                      </th>
+                                      <th>
+                                         <span class="userDatatable-title">App Fee</span>
+                                      </th>
+                                      <th class="">
+                                         <span class="userDatatable-title">VAT</span>
+                                      </th>
+                                      <th class="">
+                                        <span class="userDatatable-title">Job Status</span>
+                                     </th>
+                                     <th class="">
+                                        <span class="userDatatable-title">Payment Method</span>
+                                     </th>
+                                   </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        
+                                        <td>
+                                           <div class="d-flex">
+                                              <div class="userDatatable-inline-title">
+                                                 <a href="#" class="text-dark fw-500">
+                                                    <h6>1</h6>
+                                                 </a>
+                                              </div>
+                                           </div>
+                                        </td>
+                                        <td>
+                                           <div class="userDatatable-content--subject">
+                                              User
+                                           </div>
+                                        </td>
+                                        
+                                        <td>
+                                           <div class="userDatatable-content d-flex">
+                                              18th March,2023 1:06AM
+                                           </div>
+                                        </td>
+                                        <td>
+                                         <div class="userDatatable-content d-flex">
+                                            100
+                                         </div>
+                                      </td>
+                                        <td>
+                                         <div class="userDatatable-content d-flex">
+                                             100
+                                         </div>
+                                      </td>
+                                        <td>
+                                            <div class="userDatatable-content d-flex">
+                                                100
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="userDatatable-content d-flex">
+                                                <span class="media-badge text-uppercase color-white bg-success">Active</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="userDatatable-content d-flex">
+                                                Cash
+                                            </div>
+                                        </td>
+                                     </tr>
+                                     <tr>
+                                        
+                                        <td>
+                                           <div class="d-flex">
+                                              <div class="userDatatable-inline-title">
+                                                 <a href="#" class="text-dark fw-500">
+                                                    <h6>1</h6>
+                                                 </a>
+                                              </div>
+                                           </div>
+                                        </td>
+                                        <td>
+                                           <div class="userDatatable-content--subject">
+                                              User
+                                           </div>
+                                        </td>
+                                        
+                                        <td>
+                                           <div class="userDatatable-content d-flex">
+                                              18th March,2023 1:06AM
+                                           </div>
+                                        </td>
+                                        <td>
+                                         <div class="userDatatable-content d-flex">
+                                            100
+                                         </div>
+                                      </td>
+                                        <td>
+                                         <div class="userDatatable-content d-flex">
+                                             100
+                                         </div>
+                                      </td>
+                                        <td>
+                                            <div class="userDatatable-content d-flex">
+                                                100
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="userDatatable-content d-flex">
+                                                <span class="media-badge text-uppercase color-white bg-success">Active</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="userDatatable-content d-flex">
+                                                Cash
+                                            </div>
+                                        </td>
+                                     </tr>
+                                     <tr>
+                                        
+                                        <td>
+                                           <div class="d-flex">
+                                              <div class="userDatatable-inline-title">
+                                                 <a href="#" class="text-dark fw-500">
+                                                    <h6>1</h6>
+                                                 </a>
+                                              </div>
+                                           </div>
+                                        </td>
+                                        <td>
+                                           <div class="userDatatable-content--subject">
+                                              User
+                                           </div>
+                                        </td>
+                                        
+                                        <td>
+                                           <div class="userDatatable-content d-flex">
+                                              18th March,2023 1:06AM
+                                           </div>
+                                        </td>
+                                        <td>
+                                         <div class="userDatatable-content d-flex">
+                                            100
+                                         </div>
+                                      </td>
+                                        <td>
+                                         <div class="userDatatable-content d-flex">
+                                             100
+                                         </div>
+                                      </td>
+                                        <td>
+                                            <div class="userDatatable-content d-flex">
+                                                100
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="userDatatable-content d-flex">
+                                                <span class="media-badge text-uppercase color-white bg-success">Active</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="userDatatable-content d-flex">
+                                                Cash
+                                            </div>
+                                        </td>
+                                     </tr>
+                                     <tr>
+                                        
+                                        <td>
+                                           <div class="d-flex">
+                                              <div class="userDatatable-inline-title">
+                                                 <a href="#" class="text-dark fw-500">
+                                                    <h6>1</h6>
+                                                 </a>
+                                              </div>
+                                           </div>
+                                        </td>
+                                        <td>
+                                           <div class="userDatatable-content--subject">
+                                              User
+                                           </div>
+                                        </td>
+                                        
+                                        <td>
+                                           <div class="userDatatable-content d-flex">
+                                              18th March,2023 1:06AM
+                                           </div>
+                                        </td>
+                                        <td>
+                                         <div class="userDatatable-content d-flex">
+                                            100
+                                         </div>
+                                      </td>
+                                        <td>
+                                         <div class="userDatatable-content d-flex">
+                                             100
+                                         </div>
+                                      </td>
+                                        <td>
+                                            <div class="userDatatable-content d-flex">
+                                                100
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="userDatatable-content d-flex">
+                                                <span class="media-badge text-uppercase color-white bg-success">Active</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="userDatatable-content d-flex">
+                                                Cash
+                                            </div>
+                                        </td>
+                                     </tr>
+                                     <tr>
+                                        
+                                        <td>
+                                           <div class="d-flex">
+                                              <div class="userDatatable-inline-title">
+                                                 <a href="#" class="text-dark fw-500">
+                                                    <h6>1</h6>
+                                                 </a>
+                                              </div>
+                                           </div>
+                                        </td>
+                                        <td>
+                                           <div class="userDatatable-content--subject">
+                                              User
+                                           </div>
+                                        </td>
+                                        
+                                        <td>
+                                           <div class="userDatatable-content d-flex">
+                                              18th March,2023 1:06AM
+                                           </div>
+                                        </td>
+                                        <td>
+                                         <div class="userDatatable-content d-flex">
+                                            100
+                                         </div>
+                                      </td>
+                                        <td>
+                                         <div class="userDatatable-content d-flex">
+                                             100
+                                         </div>
+                                      </td>
+                                        <td>
+                                            <div class="userDatatable-content d-flex">
+                                                100
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="userDatatable-content d-flex">
+                                                <span class="media-badge text-uppercase color-white bg-success">Active</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="userDatatable-content d-flex">
+                                                Cash
+                                            </div>
+                                        </td>
+                                     </tr>
+                                     <tr>
+                                        
+                                        <td>
+                                           <div class="d-flex">
+                                              <div class="userDatatable-inline-title">
+                                                 <a href="#" class="text-dark fw-500">
+                                                    <h6>1</h6>
+                                                 </a>
+                                              </div>
+                                           </div>
+                                        </td>
+                                        <td>
+                                           <div class="userDatatable-content--subject">
+                                              User
+                                           </div>
+                                        </td>
+                                        
+                                        <td>
+                                           <div class="userDatatable-content d-flex">
+                                              18th March,2023 1:06AM
+                                           </div>
+                                        </td>
+                                        <td>
+                                         <div class="userDatatable-content d-flex">
+                                            100
+                                         </div>
+                                      </td>
+                                        <td>
+                                         <div class="userDatatable-content d-flex">
+                                             100
+                                         </div>
+                                      </td>
+                                        <td>
+                                            <div class="userDatatable-content d-flex">
+                                                100
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="userDatatable-content d-flex">
+                                                <span class="media-badge text-uppercase color-white bg-success">Active</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="userDatatable-content d-flex">
+                                                Cash
+                                            </div>
+                                        </td>
+                                     </tr>
+                                     <tr>
+                                        
+                                        <td>
+                                           <div class="d-flex">
+                                              <div class="userDatatable-inline-title">
+                                                 <a href="#" class="text-dark fw-500">
+                                                    <h6>1</h6>
+                                                 </a>
+                                              </div>
+                                           </div>
+                                        </td>
+                                        <td>
+                                           <div class="userDatatable-content--subject">
+                                              User
+                                           </div>
+                                        </td>
+                                        
+                                        <td>
+                                           <div class="userDatatable-content d-flex">
+                                              18th March,2023 1:06AM
+                                           </div>
+                                        </td>
+                                        <td>
+                                         <div class="userDatatable-content d-flex">
+                                            100
+                                         </div>
+                                      </td>
+                                        <td>
+                                         <div class="userDatatable-content d-flex">
+                                             100
+                                         </div>
+                                      </td>
+                                        <td>
+                                            <div class="userDatatable-content d-flex">
+                                                100
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="userDatatable-content d-flex">
+                                                <span class="media-badge text-uppercase color-white bg-success">Active</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="userDatatable-content d-flex">
+                                                Cash
+                                            </div>
+                                        </td>
+                                     </tr>
+                                </tbody>
+                             </table>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+            </div>
+          </div>
+          <!-- ends: .row -->
+       </div>
+    </div>
+ </div>
+
+ <script>
+    $(function(){
+       $('#DataTable').DataTable()
+       $('.select2').select2()
+    })
+ </script>
+ 
+ 

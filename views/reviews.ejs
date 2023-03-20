@@ -1,0 +1,123 @@
+<div class="contents">
+    <div class="crm mb-25">
+       <div class="container-fluid">
+          <div class="row ">
+             <div class="col-lg-12">
+
+                <div class="breadcrumb-main">
+                   <h4 class="text-capitalize breadcrumb-title">Reviews</h4>
+                   <div class="breadcrumb-action justify-content-center flex-wrap">
+                      <nav aria-label="breadcrumb">
+                         <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#"><i class="uil uil-airplay"></i>Reviews</a></li>
+                         </ol>
+                      </nav>
+                   </div>
+                </div>
+
+             </div>
+             <div class="col-12 mb-30">
+               <div class="support-ticket-system support-ticket-system--search">
+                  <div class="userDatatable userDatatable--ticket userDatatable--ticket--2 mt-1">
+                     <div class="">
+                        <table class="table mb-0 table-borderless table-responsive" id="DataTable">
+                           <thead>
+                              <tr class="userDatatable-header">
+                                 <th>
+                                    <span class="userDatatable-title">Booking No.</span>
+                                 </th>
+                                 <th>
+                                    <span class="userDatatable-title">Car Washer</span>
+                                 </th>
+                                 <th>
+                                    <span class="userDatatable-title">User</span>
+                                 </th>
+                                 <th>
+                                    <span class="userDatatable-title">Rating</span>
+                                 </th>
+                                 <th>
+                                    <span class="userDatatable-title">Review</span>
+                                 </th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                               <tr>
+                                    <td>
+                                        <div class="userDatatable-content d-flex">
+                                            1111111
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="userDatatable-content d-flex">
+                                            carwahser@gmail.com
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="userDatatable-content d-flex">
+                                            user@gmail.com
+                                        </div>
+                                     </td>
+                                    <td>
+                                        <div class="userDatatable-content d-flex">
+                                            <div class="rating-stars text-center">
+                                                <ul id="stars">
+                                                  <li class="star selected" title="Poor" data-value="1">
+                                                    <i class="fa fa-star fa-fw"></i>
+                                                  </li>
+                                                  <li class="star selected" title="Fair" data-value="2">
+                                                    <i class="fa fa-star fa-fw"></i>
+                                                  </li>
+                                                  <li class="star selected" title="Good" data-value="3">
+                                                    <i class="fa fa-star fa-fw"></i>
+                                                  </li>
+                                                  <li class="star selected" title="Excellent" data-value="4">
+                                                    <i class="fa fa-star fa-fw"></i>
+                                                  </li>
+                                                  <li class="star selected" title="WOW!!!" data-value="5">
+                                                    <i class="fa fa-star fa-fw"></i>
+                                                  </li>
+                                                </ul>
+                                              </div>
+                                        </div>
+                                    </td>
+                                   <td>
+                                        <div class="userDatatable-content d-flex">
+                                            <span class="media-badge text-uppercase color-white bg-primary" data-bs-toggle="modal" data-bs-target="#modal-review">Show Review</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+            </div>
+          </div>
+          <!-- ends: .row -->
+       </div>
+    </div>
+    <div class="modal-basic modal fade show" id="modal-review" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+           <div class="modal-content modal-bg-white ">
+              <div class="modal-header">
+                 <h6 class="modal-title">Review</h6>
+                 <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <img src="img/svg/x.svg" alt="x" class="svg">
+                 </button>
+              </div>
+              <div class="modal-body">
+                 <p>very good!!!!!!!1</p>
+              </div>
+              <div class="modal-footer">
+                 <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+              </div>
+           </div>
+        </div>
+     </div>
+ </div>
+
+ <script>
+   $(function(){
+      $('#DataTable').DataTable()
+   })
+</script>

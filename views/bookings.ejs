@@ -1,0 +1,126 @@
+<div class="contents">
+    <div class="crm mb-25">
+       <div class="container-fluid">
+          <div class="row ">
+             <div class="col-lg-12">
+                <div class="breadcrumb-main">
+                   <h4 class="text-capitalize breadcrumb-title">Bookings</h4>
+                   <div class="breadcrumb-action justify-content-center flex-wrap">
+                      <nav aria-label="breadcrumb">
+                         <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#"><i class="uil uil-airplay"></i>Bookings</a></li>
+                         </ol>
+                      </nav>
+                   </div>
+                </div>
+             </div>
+             <div class="col-12 mb-30">
+               <div class="support-ticket-system support-ticket-system--search">
+                  <div class="userDatatable userDatatable--ticket userDatatable--ticket--2 mt-1">
+                     <div class="table-responsive">
+                        <table class="table mb-0 table-borderless" id="DataTable">
+                           <thead>
+                              <tr class="userDatatable-header">
+                                 <th>
+                                    <span class="userDatatable-title">Booking No.</span>
+                                 </th>
+                                 <th>
+                                    <span class="userDatatable-title">User</span>
+                                 </th>
+                                 <th>
+                                    <span class="userDatatable-title">Car Washer</span>
+                                 </th>
+                                 <th>
+                                    <span class="userDatatable-title">Booking Date</span>
+                                 </th>
+                                 <th>
+                                    <span class="userDatatable-title">Job Location</span>
+                                 </th>
+                                 <th>
+                                    <span class="userDatatable-title">Service Provider Location</span>
+                                 </th>
+                                 <th>
+                                    <span class="userDatatable-title">Job Details</span>
+                                 </th>
+                                 <th>
+                                    <span class="userDatatable-title">Status</span>
+                                 </th>
+                                 <th class="actions">
+                                    <span class="userDatatable-title">Action</span>
+                                 </th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                               <tr>
+                                    <td>
+                                        <div class="userDatatable-content--subject">
+                                            1233123
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="userDatatable-content--subject">
+                                            user@gmail.com
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="userDatatable-content--subject">
+                                            washer@gmail.com
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="userDatatable-content--subject">
+                                            23-MAR-2023
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="userDatatable-content d-flex">
+                                            <span class="media-badge text-uppercase color-white bg-primary" data-bs-toggle="modal" data-bs-target="#modal-location">Show Location</span>
+                                        </div>
+                                     </td>
+                                     <td>
+                                        <div class="userDatatable-content d-flex">
+                                            <span class="media-badge text-uppercase color-white bg-primary" data-bs-toggle="modal" data-bs-target="#modal-location">Show Location</span>
+                                        </div>
+                                     </td>
+                                     <td>
+                                        <div class="userDatatable-content d-flex">
+                                            <span class="media-badge text-uppercase color-white bg-primary" data-bs-toggle="modal" data-bs-target="#modal-details">Job Details</span>
+                                        </div>
+                                     </td>
+                                     <td>
+                                        <div class="userDatatable-content d-flex">
+                                            <span class="media-badge text-uppercase color-white bg-success">In Process</span>
+                                        </div>
+                                    </td>
+                                   <td>
+                                      <ul class="orderDatatable_actions mb-0 d-flex flex-wrap">
+                                         <li>
+                                            <a href="#" class="view">
+                                               <i class="uil uil-edit"></i>
+                                            </a>
+                                         </li>
+                                         <li>
+                                            <a href="#" class="view">
+                                               <i class="uil uil-setting"></i>
+                                            </a>
+                                         </li>
+                                      </ul>
+                                   </td>
+                                </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+            </div>
+          </div>
+          <!-- ends: .row -->
+       </div>
+    </div>
+ </div>
+
+ <script>
+    $(function(){
+       $('#DataTable').DataTable()
+    })
+ </script>
