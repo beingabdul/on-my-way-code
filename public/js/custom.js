@@ -8,7 +8,7 @@
  $(function () {
     var path = location.pathname.replace("/","");
     if(path == ""){
-        var element = $('.main-content').find("[href='dashboard']");
+        var element = $('.main-content').find("[href='dashboard']")
     }
     else{
         var element = $('.main-content').find("[href='" + path + "']");
