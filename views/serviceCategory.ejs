@@ -1,143 +1,228 @@
-<link rel="stylesheet" type="text/css" href="assets/vendor_assets/file-uploader/file-upload-with-preview.min.css">
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="assets/vendor_assets/file-uploader/file-upload-with-preview.min.css"
+/>
 
 <div class="contents">
-
-    <div class="crm mb-25">
-       <div class="container-fluid">
-          <div class="row ">
-             <div class="col-lg-12">
-
-                <div class="breadcrumb-main">
-                   <h4 class="text-capitalize breadcrumb-title">Service Category</h4>
-                   <div class="breadcrumb-action justify-content-center flex-wrap">
-                      <nav aria-label="breadcrumb">
-                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#"><i class="uil uil-airplay"></i>Service Category</a></li>
-                         </ol>
-                      </nav>
-                   </div>
-                </div>
-
-             </div>
-             <div class="col-12 mb-30">
-               <div class="support-ticket-system support-ticket-system--search">
-                  <div class="userDatatable userDatatable--ticket userDatatable--ticket--2 mt-1">
-                     <div class="d-flex justify-content-between">
-                        <p></p>
-                        <button data-bs-toggle="modal" data-bs-target="#modal-ag" class="btn btn-primary btn-default btn-squared mb-25" >Add Category</button>
-                     </div>
-                     <div class="">
-                        <table class="table mb-0 table-borderless table-responsive" id="DataTable">
-                           <thead>
-                              <tr class="userDatatable-header">
-                                 <th>
-                                    <span class="userDatatable-title">Icon</span>
-                                 </th>
-                                 <th>
-                                    <span class="userDatatable-title">Category Name</span>
-                                 </th>
-                                 <th>
-                                    <span class="userDatatable-title">View Services</span>
-                                 </th>
-                                 <th>
-                                    <span class="userDatatable-title">Order</span>
-                                 </th>
-                                 <th>
-                                    <span class="userDatatable-title">Status</span>
-                                 </th>
-                                 <th class="actions">
-                                    <span class="userDatatable-title">Actions</span>
-                                 </th>
-                              </tr>
-                           </thead>
-                           <tbody>
-                               <tr>
-                                    <td>
-                                        <div class="image-link">
-                                            <a class="image-popup-vertical-fit" href="carwash.png">
-                                                <img class="img-responsive thumbnail" src="carwash.png" width="35" height="30">
-                                            </a>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="userDatatable-content d-flex">
-                                            Car Wash
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <div class="userDatatable-content d-flex">
-                                            <span class="media-badge text-uppercase color-white bg-primary" data-bs-toggle="modal" data-bs-target="#modal-sp">Show Services</span>
-                                        </div>
-                                     </td>
-                                    <td>
-                                        <div class="userDatatable-content d-flex">
-                                            1
-                                        </div>
-                                    </td>
-                                   <td>
-                                        <div class="userDatatable-content d-flex">
-                                            <span class="media-badge text-uppercase color-white bg-success">Active</span>
-                                        </div>
-                                    </td>
-                                   <td>
-                                      <ul class="orderDatatable_actions mb-0 d-flex flex-wrap">
-                                         <li>
-                                            <a href="#" class="view">
-                                               <i class="uil uil-setting"></i>
-                                            </a>
-                                         </li>
-                                      </ul>
-                                   </td>
-                                </tr>
-                           </tbody>
-                        </table>
-                     </div>
-                  </div>
-               </div>
+  <div class="crm mb-25">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="breadcrumb-main">
+            <h4 class="text-capitalize breadcrumb-title">Service Category</h4>
+            <div class="breadcrumb-action justify-content-center flex-wrap">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item">
+                    <a href="#"
+                      ><i class="uil uil-airplay"></i>Service Category</a
+                    >
+                  </li>
+                </ol>
+              </nav>
             </div>
           </div>
-          <!-- ends: .row -->
-       </div>
-    </div>
-    <div class="modal-basic modal fade show" id="modal-ag" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog modal-lg" role="document">
-         <div class="modal-content modal-bg-white ">
-            <div class="modal-header">
-               <h6 class="modal-title">Add Service Category</h6>
-               <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                  <img src="img/svg/x.svg" alt="x" class="svg">
-               </button>
-            </div>
-            <div class="modal-body">
-               Name:
-               <div class="form-group mb-3 mt-1">
-                  <input type="text" class="form-control form-control-lg" placeholder="Full name">
-               </div>
-               <div class="custom-file-container" data-upload-id="myFirstImage">
-                <label style="color:black">* Category Image <a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">x</a></label>
-                <label class="custom-file-container__custom-file">
-                    <input type="file" class="custom-file-container__custom-file__custom-file-input" id="file" name="file">
-                    <input type="hidden" name="MAX_FILE_SIZE" value="10485760" />
-                    <span class="custom-file-container__custom-file__custom-file-control"></span>
-                </label>
-                <div class="custom-file-container__image-preview"></div>
+        </div>
+        <div class="col-12 mb-30">
+          <div class="support-ticket-system support-ticket-system--search">
+            <div
+              class="userDatatable userDatatable--ticket userDatatable--ticket--2 mt-1"
+            >
+              <div class="d-flex justify-content-between">
+                <p></p>
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-ag"
+                  class="btn btn-primary btn-default btn-squared mb-25"
+                >
+                  Add Category
+                </button>
+              </div>
+              <div class="">
+                <table class="table dt-responsive" id="DataTable">
+                  <thead>
+                    <tr class="userDatatable-header">
+                      <th>
+                        <span class="userDatatable-title">Icon</span>
+                      </th>
+                      <th>
+                        <span class="userDatatable-title">Category Name</span>
+                      </th>
+                      <th>
+                        <span class="userDatatable-title">View Services</span>
+                      </th>
+                      <th>
+                        <span class="userDatatable-title">Starting Price</span>
+                      </th>
+                      <th>
+                        <span class="userDatatable-title">Min Order Price</span>
+                      </th>
+                      <th>
+                        <span class="userDatatable-title">Max Cars/Order</span>
+                      </th>
+                      <th>
+                        <span class="userDatatable-title">Comming Soon</span>
+                      </th>
+                      <th>
+                        <span class="userDatatable-title">Order</span>
+                      </th>
+                      <th>
+                        <span class="userDatatable-title">Status</span>
+                      </th>
+                      <th class="actions">
+                        <span class="userDatatable-title">Actions</span>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody id="catData"></tbody>
+                </table>
               </div>
             </div>
-            <div class="modal-footer">
-               <button type="button" class="btn btn-primary btn-sm" data-bs-dismiss="modal">Save</button>
-               <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
-            </div>
-         </div>
+          </div>
+        </div>
       </div>
-   </div>
- </div>
+      <!-- ends: .row -->
+    </div>
+  </div>
+  <div
+    class="modal-basic modal fade show"
+    data-backdrop="static"
+    id="modal-ag"
+    tabindex="-1"
+    role="dialog"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content modal-bg-white">
+        <div class="modal-header">
+          <h6 class="modal-title">Add Service Category</h6>
+          <button
+            type="button"
+            class="close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          >
+            <img src="img/svg/x.svg" alt="x" class="svg" />
+          </button>
+        </div>
+        <div class="modal-body">
+          Name:
+          <div class="form-group mb-3 mt-1">
+            <input
+              type="text"
+              name="categoryName"
+              class="form-control form-control-lg"
+              placeholder="Full name"
+            />
+          </div>
+          Comming Soon:
+          <div
+            class="form-check form-switch form-switch-primary form-switch-md"
+          >
+            <input
+              type="checkbox"
+              name="isCommingSoon"
+              class="form-check-input"
+              id="switch-s1"
+            />
+            <label class="form-check-label" for="switch-s1"></label>
+          </div>
+          <div class="row form-group mb-3 mt-1">
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+              Starting Price:
+              <input
+                type="number"
+                name="startingPrice"
+                class="form-control ih-medium ip-light radius-xs b-light px-15"
+                id="element-text5"
+                placeholder="123"
+                min="1"
+                value="1"
+                max="9999"
+              />
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+              Minimum Order Price:
+              <input
+                type="number"
+                name="minimumOrderprice"
+                class="form-control ih-medium ip-light radius-xs b-light px-15"
+                id="element-text5"
+                placeholder="123"
+                min="1"
+                value="1"
+                max="9999"
+              />
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4 col-xs-12">
+              Maximum Cars Per Order:
+              <input
+                type="number"
+                name="maximumCarsOrder"
+                class="form-control ih-medium ip-light radius-xs b-light px-15"
+                id="element-text5"
+                placeholder="123"
+                min="1"
+                value="1"
+                max="9999"
+              />
+            </div>
+          </div>
+          <div class="custom-file-container" data-upload-id="myFirstImage">
+            <label style="color: black"
+              >* Category Image
+              <a
+                href="javascript:void(0)"
+                class="custom-file-container__image-clear"
+                title="Clear Image"
+                >x</a
+              ></label
+            >
+            <label class="custom-file-container__custom-file">
+              <input
+                type="file"
+                accept="image/png, image/gif, image/jpeg"
+                class="custom-file-container__custom-file__custom-file-input"
+                id="file"
+                name="file"
+              />
+              <input type="hidden" name="MAX_FILE_SIZE" value="10485760" />
+              <span
+                class="custom-file-container__custom-file__custom-file-control"
+              ></span>
+            </label>
+            <div class="custom-file-container__image-preview"></div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a
+            type="button"
+            onclick="validateCategory()"
+            class="btn btn-primary btn-sm"
+            id="save_btn"
+          >
+            Save
+          </a>
+          <button
+            type="button"
+            class="btn btn-secondary btn-sm"
+            data-bs-dismiss="modal"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-
- <script src="assets/vendor_assets/file-uploader/file-upload-with-preview.min.js"></script>
- <script>
-   $(function(){
-      $('#DataTable').DataTable()
-      $('.image-link').lightGallery()
-      var first = new FileUploadWithPreview('myFirstImage');
-   })
+<script src="assets/vendor_assets/file-uploader/file-upload-with-preview.min.js"></script>
+<script src="js/service-categories.js"></script>
+<script>
+  $(function () {
+    $("#DataTable").DataTable();
+    $(".image-link").lightGallery();
+    var first = new FileUploadWithPreview("myFirstImage");
+  });
 </script>
